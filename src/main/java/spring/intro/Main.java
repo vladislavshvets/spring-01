@@ -16,5 +16,4 @@ public class Main {
         userService.add(new User("Ayn", "Rend", "aynrend@gmail.com"));
         userService.listUsers();
     }
-
 }
