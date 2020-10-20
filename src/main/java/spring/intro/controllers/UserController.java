@@ -20,10 +20,11 @@ public class UserController {
     UserService userService = context.getBean(UserService.class);
 
     @GetMapping(value = "/inject")
-    public void injectUsers() {
+    public String injectUsers() {
         userService.add(new User("Taras", "Sheva", "shevchencko@gmail.com"));
         userService.add(new User("Lesya", "Uk", "lesya@gmail.com"));
         userService.add(new User("Ayn", "Rend", "aynrend@gmail.com"));
+        return "Users were injected.";
     }
 
     @GetMapping(value = "/{userId}")
