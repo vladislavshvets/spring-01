@@ -2,7 +2,6 @@ package spring.intro.controllers;
 
 import java.util.List;
 import java.util.stream.Collectors;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,7 +21,7 @@ public class UserController {
         this.userService = userService;
     }
 
-    @GetMapping(value = "/inject")
+    @GetMapping("/inject")
     public String injectUsers() {
         userService.add(new User("Taras", "Sheva", "shevchencko@gmail.com"));
         userService.add(new User("Lesya", "Uk", "lesya@gmail.com"));
