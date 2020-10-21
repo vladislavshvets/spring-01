@@ -26,6 +26,7 @@ public class UserController {
         userService.add(new User("Taras", "Sheva", "shevchencko@gmail.com"));
         userService.add(new User("Lesya", "Uk", "lesya@gmail.com"));
         userService.add(new User("Ayn", "Rend", "aynrend@gmail.com"));
+        userService.add(new User("Pavlo", "Zibrov", "aynrend@gmail.com"));
         return "Users were injected.";
     }
 
